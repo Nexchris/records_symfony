@@ -1,0 +1,26 @@
+# config/routes/api.yaml
+
+user_index:
+    path: /api/users
+    controller: App\Controller\UserController::index
+    methods: GET
+
+user_create:
+    path: /api/users
+    controller: App\Controller\UserController::create
+    methods: POST
+
+user_show:
+    path: /api/users/{id}
+    controller: App\Controller\UserController::show
+    methods: GET
+
+user_update:
+    path: /api/users/{id}
+    controller: App\Controller\UserController::update
+    methods: PUT
+
+user_delete:
+    path: /api/users/{id}
+    controller: App\Controller\UserController::delete
+    methods: DELETE

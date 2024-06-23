@@ -1,3 +1,27 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+
+
+
+# config/routes.yaml
+api_vinyles_index:
+    path: /api/vinyles
+    controller: App\Controller\VinyleController::index
+    methods: ['GET']
+
+api_vinyles_create:
+    path: /api/vinyles
+    controller: App\Controller\VinyleController::create
+    methods: ['POST']
+
+api_vinyles_update:
+    path: /api/vinyles/{id}
+    controller: App\Controller\VinyleController::update
+    methods: ['PUT']
+
+api_vinyles_delete:
+    path: /api/vinyles/{id}
+    controller: App\Controller\VinyleController::delete
+    methods: ['DELETE']
