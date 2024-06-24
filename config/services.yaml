@@ -16,5 +16,3 @@ services:
     # Explicitly define the annotation reader service
     doctrine.orm.metadata.annotation_reader:
         class: Doctrine\Common\Annotations\AnnotationReader
-
-        
